@@ -26,3 +26,32 @@ Most popular languages can be used in many ways: server app, desktop app, consol
 - Opinion free
 - Slow paced
 - Lecture
+
+## Environment setup
+
+On OS X things are pretty simple. We'll use [Homebrew](http://brew.sh) and [Node Version Manager]() (or nvm) to do the heavy lifting.
+
+First, let's install Homebrew if you don't have it already.
+
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Then let's get nvm.
+
+```
+brew install nvm
+```
+
+We'll need to make a few small edits to our `~/.bash_profile`, `~/.zshrc`, or `~/.profile`.
+
+```
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+```
+
+Now we can get the latest version of Node.
+
+```
+nvm install 4.0
+```
