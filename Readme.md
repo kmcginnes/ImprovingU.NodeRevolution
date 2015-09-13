@@ -4,13 +4,13 @@ This class will not be about the language or handling web requests or making dat
 
 Most popular languages can be used in many ways: server app, desktop app, console app, build script, REPL, etc. What makes Node different is that it can do one thing the others can't: run in the browser. This is not one more bullet on the feature list, this is a revolution. Let's discover why, together.
 
-## What to expect
+### What to expect
 
 - History of Node
 - How it works
 - Build a complete app
 
-## Buzzwords
+### Buzzwords
 
 - Gulp, Grunt
 - Express, React, Isomorphic
@@ -19,7 +19,7 @@ Most popular languages can be used in many ways: server app, desktop app, consol
 - Elektron
 - Github, TravisCI
 
-## What it's not
+### What it's not
 
 - Intro to coding
 - Intro to JavaScript
@@ -28,6 +28,8 @@ Most popular languages can be used in many ways: server app, desktop app, consol
 - Lecture
 
 ## Environment setup
+
+### Mac OS X
 
 On OS X things are pretty simple. We'll use [Homebrew](http://brew.sh) and [Node Version Manager]() (or nvm) to do the heavy lifting.
 
@@ -55,3 +57,14 @@ Now we can get the latest version of Node.
 ```
 nvm install 4.0
 ```
+
+### Windows
+
+TODO - I'll need to figure out the best way to install the latest in Windows. I'm guessing Chocolatey will be my best bet.
+
+
+## Domain
+
+We need something to strive for in our application. A driving vision of functionality. Something where using Node, React, MongoDb, etc makes sense.
+
+We can go with something fictional and just make everything up. But I would rather build something that would be useful to everyone taking the class. Maybe we can use [Intuit's API](https://developer.intuit.com/docs/api/accounting/timeactivity) to build a better time tracker for Improver's to use.
