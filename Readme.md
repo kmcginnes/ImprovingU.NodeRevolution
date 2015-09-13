@@ -29,9 +29,13 @@ Most popular languages can be used in many ways: server app, desktop app, consol
 
 ## Environment setup
 
+We will be using NodeJS v4, which was release very recently. It's the merging of Node and Io.js. This means Node now has official support for ES6, which we will use exclusively.
+
 ### Mac OS X
 
 On OS X things are pretty simple. We'll use [Homebrew](http://brew.sh) and [Node Version Manager]() (or nvm) to do the heavy lifting.
+
+I lifted many of these instructions from this [great article](http://michael-kuehnel.de/node.js/2015/09/08/using-vm-to-switch-node-versions.html).
 
 First, let's install Homebrew if you don't have it already.
 
