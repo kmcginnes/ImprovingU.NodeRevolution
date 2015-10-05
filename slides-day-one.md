@@ -17,16 +17,22 @@ class: center, middle
 
 It's important to remember that Node is really two things: a runtime environment and a set of libraries. Like .Net is the CLR and the base class libraries. The Node libraries have first class support for things like HTTP requests and non-blocking IO calls.
 
+--
+
 ### What Node.js is not
 
 * A framework like Asp.net MVC/Web Forms
 * A new programming language
+
+--
 
 ### Standard libraries
 
 * Async by default
 * Low level
 * HTTP is first class citizen
+
+--
 
 #### Demo
 
@@ -47,6 +53,8 @@ console.log("Server listening on http://localhost:3000");
 
 Open [http://localhost:3000](http://localhost:3000)
 
+--
+
 ### What is NPM
 
 NPM is a command line utility that allows the installation and management of Node modules. These modules can be installed from many sources, but the most common one is [npmjs.com](http://www.npmjs.com).
@@ -62,12 +70,16 @@ Every Node application is a module by default.
 * NPM installs packags to a local `node_modules` folder and adds that to the Node module path
 * `require('express')` will be found in the local `node_modules` folder
 
+--
+
 ## Developing and Debugging
 
 * Lots of different choices
 * [nodemon](http://nodemon.io) for save, refresh browser workflow
 * [node-inspector](https://github.com/node-inspector/node-inspector) allows debugging in Chrome
 * IDEs (WebStorm, Eclipse, Visual Studio [Code], etc)
+
+--
 
 ### Demo
 
@@ -77,10 +89,14 @@ Every Node application is a module by default.
 
 Open in Chrome [http://localhost]()
 
+--
+
 ## CommonJS modules
 
 * Prevents pollution of the global scope
 * Two style of module development
+
+--
 
 ### Demo
 
@@ -135,11 +151,15 @@ var point = new Point(25, 36);
 point.print();
 ```
 
+--
+
 ## Async callbacks and error handling
 
 * Any async function allows you to pass a callback
 * Callback parameters include an `Error` parameter
 * Errors will bring down the process if not handled
+
+--
 
 
 ### Demo
@@ -155,6 +175,8 @@ fs.readFile('/', function (err) {
     console.log('completed');
 });
 ```
+
+--
 
 ### History
 
@@ -172,9 +194,13 @@ fs.readFile('/', function (err) {
 * 2015 EcmaScript 6 finalized
 * 2015 IO.js merges back into Node.js
 
+--
+
 #### Sep 2, 2008 Google releases V8 JavaScript engine
 
 It was a big step forward in browsers’ performance, and it pushed browsers’ technology to a new whole level. It’s written in C++ and its biggest revolution was that it precompiled the Javascript source code to machine code instead of just interpret it and then applied a JIT process again in runtime to improve dynamic code execution.
+
+--
 
 #### Ryan Dahl starts working on this thing called Node
 
@@ -182,8 +208,12 @@ Dahl was inspired to create Node.js after seeing a file upload progress bar on F
 
 Based on the ideas of Mongrel for Ruby, and designed to overcome the problems of Ruby on Rails. 
 
+--
+
 
 ### Why Node.js
+
+--
 
 #### JavaScript everywhere
 
@@ -191,11 +221,15 @@ Based on the ideas of Mongrel for Ruby, and designed to overcome the problems of
 * Same programming culture on client and server
 * Lots of JavaScript programmers
 
+--
+
 #### Vibrant community
 
 * 190,000+ packages on npm
 * Top corporate sponsers
 * Huge wealth of JavaScript code
+
+--
 
 #### Sweet spots
 
@@ -204,7 +238,11 @@ Based on the ideas of Mongrel for Ruby, and designed to overcome the problems of
 * Service orchestration
 * Working with document (JSON-style) databases
 
+--
+
 #### Not so sweet spots
 
 * Simple CRUD apps (lack of frameworks)
 * Not as fast as some for CPU-intensive stuff
+
+--
