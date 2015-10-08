@@ -86,10 +86,11 @@ I'll talk about what Node is capable of and why it matters.
 
 At the end of the lesson we'll build a simple app.
 
-Check out [the slides](slides-day-one.md).
+Check out [the slides](slides-day-one.md) and the [demos](demos-day-one.md).
 
 ### Tools discussed
 
+* [npm](https://www.npmjs.com) installs, updates, and removes Node packages.
 * [nodemon](https://github.com/remy/nodemon/) will restart your node server on file changes.
 * [node-inspector](https://github.com/node-inspector/node-inspector) allows debugging your server side JavaScript inside a familiar Chrome Web Tools like environment.
 
@@ -97,7 +98,7 @@ Check out [the slides](slides-day-one.md).
 
 Talk about isomorphic web development and why it's the future.
 
-Check out [the slides](slides-day-two.md).
+Check out [the slides](slides-day-two.md) and the [demos](demos-day-two.md).
 
 ## Sources of information
 
