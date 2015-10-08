@@ -27,7 +27,9 @@ Open [http://localhost:3000](http://localhost:3000)
 
 `> node-debug app.js`
 
-Open in Chrome [http://localhost]()
+`> npm install -g nodemon`
+
+`> nodemon app.js`
 
 ---
 
