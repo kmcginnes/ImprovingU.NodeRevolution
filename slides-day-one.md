@@ -44,6 +44,31 @@ It's important to remember that Node is really two things: a runtime environment
 
 ---
 
+## Mapping the nomenclature
+
+I stole this slide from Shawn Wildermouth's great Node.js course on PluralSight. I highly recomend checking it out. It influenced a lot of what you are learning here.
+
+IIS => Node.exe
+C#/VB => JavaScript
+EF/SQL Server => MongoDB or other database
+ASP.Net Web Forms => Express + EJS
+ASP.Net MVC/Razor => Express + Jade/Razor
+ASP.Net Web API => Express
+Angular/Ember/KnockoutJS => Angular/Ember/KnockoutJS
+SignalR => WebSockets/Socket.io
+
+---
+
+## Dependency managment
+
+* Like RequireJS but different
+* The `require` keyword takes a path to a file
+* Uses `exports` as the returned object
+* Executes module code once and caches
+* When assigning a function to `exports` you must use `module.exports`
+
+---
+
 ## What Node.js is not
 
 * A framework like Asp.net MVC/Web Forms

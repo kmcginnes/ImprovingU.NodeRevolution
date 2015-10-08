@@ -88,79 +88,16 @@ At the end of the lesson we'll build a simple app.
 
 Check out [the slides](slides-day-one.md).
 
+### Tools discussed
+
+* [nodemon](https://github.com/remy/nodemon/) will restart your node server on file changes.
+* [node-inspector](https://github.com/node-inspector/node-inspector) allows debugging your server side JavaScript inside a familiar Chrome Web Tools like environment.
+
 ## Day two
 
 Talk about isomorphic web development and why it's the future.
 
-### Progression of web development styles
-
-* Server rendered pages
-* Server rendered partials
-* Client rendered pages (SPAs)
-* Isomorphic 
-
-#### Server rendered pages
-
-* Easy to reason about
-* Access to server side data and behavior
-* Every action is a full page refresh
-* Poor user experience for dynamic apps
-
-#### Server rendered partials
-
-* Uses AJAX strategically
-* Better than a full page refresh
-* Code is more complex
-* Coupling client side and server side
-
-#### Client rendered pages (SPAs)
-
-* JavaScript manages rendering HTML
-* Server only sends data (JSON)
-* No full page refresh
-* No content before the JS loads
-* SEO is a PITA
-* Don't press the back button!!
-* Infamous spinner
-
-#### Isomorphic 
-
-No more conceptual divide between the server and the client.
-
-Flow:
-1. Request from user (HTTP)
-2. Render on server with JavaScript
-3. Respond with HTML
-4. Load the same JavaScript on client
-5. //Hook// into the rendered app
-
-### Mapping the nomenclature
-
-I stole this slide from Shawn Wildermouth's great Node.js course on PluralSight. I highly recomend checking it out. It influenced a lot of what you are learning here.
-
-IIS => Node.exe
-C#/VB => JavaScript
-EF/SQL Server => MongoDB or other database
-ASP.Net Web Forms => Express + EJS
-ASP.Net MVC/Razor => Express + Jade/Razor
-ASP.Net Web API => Express
-Angular/Ember/KnockoutJS => Angular/Ember/KnockoutJS
-SignalR => WebSockets/Socket.io
-
-### Dependency managment
-
-* Like RequireJS but different
-* The `require` keyword takes a path to a file
-* Uses `exports` as the returned object
-* Executes module code once and caches
-* When assigning a function to `exports` you must use `module.exports`
-
-
-## Domain
-
-We need something to strive for in our application. A driving vision of functionality. Something where using Node, React, MongoDb, etc makes sense.
-
-We can go with something fictional and just make everything up. But I would rather build something that would be useful to everyone taking the class. Maybe we can use [Intuit's API](https://developer.intuit.com/docs/api/accounting/timeactivity) to build a better time tracker for Improver's to use.
+Check out [the slides](slides-day-two.md).
 
 ## Sources of information
 
@@ -173,3 +110,5 @@ __NDC 2015 - Building Isomorphic Applications in JavaScript - Eirik Langholm Vul
 [Great video on the why and how of isomorphic JavaScript apps.](https://vimeo.com/131640205)
 [The simple code from his video](https://github.com/eiriklv/ndc-isomorphic)
 [The complex code from his video](https://github.com/eiriklv/ndc-isomorphic-flux)
+
+
