@@ -111,5 +111,11 @@ __NDC 2015 - Building Isomorphic Applications in JavaScript - Eirik Langholm Vul
 [Great video on the why and how of isomorphic JavaScript apps.](https://vimeo.com/131640205)
 [The simple code from his video](https://github.com/eiriklv/ndc-isomorphic)
 [The complex code from his video](https://github.com/eiriklv/ndc-isomorphic-flux)
+[David Wells Isomorphic React Example](https://github.com/DavidWells/isomorphic-react-example) This one links to a few more good examples.
 
+__What happened to the missing versions__
+
+Node jumped from 0.12 all the way to 4.0. Read this article to find out why.
+
+[Node.JS is SemVer](https://medium.com/@nodesource/node-js-is-semver-8b3938ae8d24)
 
