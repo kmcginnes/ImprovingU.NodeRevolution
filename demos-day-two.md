@@ -28,19 +28,21 @@ Install ExpressJS and save it. It is not a dev dependency, but a full dependency
 
 Add the most basic code needed to get an Express server up and running:
 
-    var express = require('express');
-    var app = express();
+```javascript
+var express = require('express');
+var app = express();
 
-    app.get('/', function (req, res) {
-      res.send('Hello World!');
-    });
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
 
-    var server = app.listen(3000, function () {
-      var host = server.address().address;
-      var port = server.address().port;
+var server = app.listen(3000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
 
-      console.log('Example app listening at http://%s:%s', host, port);
-    });
+  console.log('Example app listening at http://%s:%s', host, port);
+});
+```
 
 Then open the site at [http://localhost:3000](http://localhost:3000). Any other route will result in a 404.
 
@@ -54,22 +56,28 @@ Let's create a folder for our Jade views and tell Express about it.
 
 Add these to server.js:
 
-    app.set('view engine', 'jade');
-    app.set('views', './views');
+```javascript
+app.set('view engine', 'jade');
+app.set('views', './views');
+```
 
 Now create `views/index.jade` and add:
 
-    html
-      head
-        title!= title
-      body
-        h1!= message
+```jade
+html
+  head
+    title!= title
+  body
+    h1!= message
+```
 
 And route to it in `server.js`
 
-    app.get('/', function (req, res) {
-      res.render('index', { title: 'Hey', message: 'Hello there!'});
-    });
+```javascript
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: 'Hello there!'});
+});
+```
 
 Ok, that's cool. We have a full fledged web server. This gives us pretty much everything that Asp.net MVC gives us as far as views and routes go.
 
@@ -79,32 +87,34 @@ Let's make things a bit more interesting. Enter __ReactJs__.
 
 and add make server.js look like the following:
 
-    var express = require('express');
-    var React = require('react');
-    var ReactDOM = require('react-dom/server');
+```javascript
+var express = require('express');
+var React = require('react');
+var ReactDOM = require('react-dom/server');
 
-    var app = express();
+var app = express();
 
-    app.set('view engine', 'jade');
-    app.set('views', './views');
+app.set('view engine', 'jade');
+app.set('views', './views');
 
-    var MyComponent = React.createClass({
-      render: function() {
-        return React.createElement('div', null, "Hello world");
-      }
-    });
+var MyComponent = React.createClass({
+  render: function() {
+    return React.createElement('div', null, "Hello world");
+  }
+});
 
-    app.get('/', function (req, res) {
-      var content = ReactDOM.renderToString(React.createElement(MyComponent, null));
-      res.render('index', {reactContent: content});
-    });
+app.get('/', function (req, res) {
+  var content = ReactDOM.renderToString(React.createElement(MyComponent, null));
+  res.render('index', {reactContent: content});
+});
 
-    var server = app.listen(3000, function () {
-      var host = server.address().address;
-      var port = server.address().port;
+var server = app.listen(3000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
 
-      console.log('Example app listening at http://%s:%s', host, port);
-    });
+  console.log('Example app listening at http://%s:%s', host, port);
+});
+```
 
 React is now working, but we want to use the JSX syntax. Let's add Browserify and Gulp to take care of the conversion.
 
@@ -113,12 +123,14 @@ React is now working, but we want to use the JSX syntax. Let's add Browserify an
 
 Now let's create a `gulpfile.js`.
 
-    var gulp = require('gulp');
-    var clean = require('gulp-clean');
-    
-    gulp.task('clean', function() {
-      return gulp.src(['build/*'], {read: false}).pipe(clean());
-    });
+```javascript
+var gulp = require('gulp');
+var clean = require('gulp-clean');
+
+gulp.task('clean', function() {
+  return gulp.src(['build/*'], {read: false}).pipe(clean());
+});
+```
 
 This only has a clean task which deletes all files in the `./build/` directory.
 
