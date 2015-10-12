@@ -1,10 +1,6 @@
 import React from 'react'
 
 class Inbox extends React.Component {
-  componentDidMount() {
-    console.log('React is now loaded client side.');
-  }
-
   render() {
     return (
       <div>

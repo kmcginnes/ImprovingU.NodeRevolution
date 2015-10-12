@@ -334,7 +334,7 @@ So far we've only been dealing with a single page in our application. Let's expa
 
 Let's use [react-router](https://github.com/rackt/react-router) for this:
 
-    npm install --save react-router@1.0.0-rc3
+    npm install --save react-router@1.0.0-rc3 history
 
 Now we'll add a new file called `app/routes.js` that will define all of our app's routes:
 
@@ -352,13 +352,18 @@ export default (
 Then we'll change our `app/client.js` to use the router:
 
 ```javascript
+import { createLocation, createMemoryHistory } from 'history'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Router from "react-router"
 
 import routes from "./routes"
 
-ReactDOM.render(<Router routes={routes} />, document.getElementById('app'));
+ReactDOM.render(
+  <Router routes={routes} history={createMemoryHistory()} />, 
+  document.getElementById('app')
+);
+
 ```
 
 And change the `app/server.js` to do the same:
@@ -390,6 +395,88 @@ app.get('/*', (req, res) => {
 });
 
 // ... snip ...
+```
+
+Now we can add more react components `app/components/About.js` and `app/components/Inbox.js`:
+
+```javascript
+import React from 'react'
+
+class About extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>About</h2>
+        <p>This is the about screen</p>
+      </div>
+    );
+  }
+}
+
+module.exports = About;
+```
+
+```javascript
+import React from 'react'
+
+class Inbox extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Inbox</h2>
+        <p>This is the Inbox screen</p>
+      </div>
+    );
+  }
+}
+
+module.exports = Inbox;
+```
+
+Then modify the `app/routes.js` file to include the new components:
+
+```javascript
+import React from 'react';
+import { Route } from 'react-router';
+
+import ReactApp from './components/ReactApp';
+import About from './components/About';
+import Inbox from './components/Inbox';
+
+export default (  
+  <Route path='/' component={ ReactApp }>
+    <Route path='about' component={ About } />
+    <Route path='inbox' component={ Inbox } />
+  </Route>
+);
+```
+
+And finally change `app/components/ReactApp.js` to link to these new components:
+
+```javascript
+import React from 'react'
+import { Link } from 'react-router'
+
+class ReactApp extends React.Component {
+  componentDidMount() {
+    console.log('React is now loaded client side.');
+  }
+
+  render() {
+    return (
+      <div>
+        <h1><Link to='/'>App</Link></h1>
+        <ul>
+          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/inbox'>Inbox</Link></li>
+        </ul>
+        {this.props.children}
+      </div>
+    );
+  }
+}
+
+module.exports = ReactApp;
 ```
 
 ## Allow client side use of server components

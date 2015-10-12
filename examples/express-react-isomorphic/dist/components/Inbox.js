@@ -24,11 +24,6 @@ var Inbox = (function (_React$Component) {
   }
 
   _createClass(Inbox, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      console.log('React is now loaded client side.');
-    }
-  }, {
     key: 'render',
     value: function render() {
       return _react2['default'].createElement(
