@@ -1,0 +1,19 @@
+{
+  "name": "promises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kmcginnes",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-runtime": "^5.8.25",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.3.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-jasmine": "^2.1.0",
+    "gulp-nodemon": "^2.0.4"
+  }
+}

@@ -494,3 +494,5 @@ module.exports = ReactApp;
 [DavidWells/isomorphic-react-example](https://github.com/DavidWells/isomorphic-react-example)
 [Server/Client With React, Part 2: The Build System](http://eflorenzano.com/blog/2014/04/10/react-part-2-build-system/)
 [Josh Finnie - React.js Tutorial Part 2](http://www.joshfinnie.com/blog/reactjs-tutorial-part-2/)
+[React Router](https://github.com/rackt/react-router)
+[Joseph Furlott - Tutorial: Setting Up a Simple Isomorphic React app](http://jmfurlott.com/tutorial-setting-up-a-simple-isomorphic-react-app/)

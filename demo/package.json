@@ -1,0 +1,27 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-nodemon": "^2.0.4",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
