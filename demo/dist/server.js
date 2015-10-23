@@ -1,33 +1,33 @@
-'use strict';
+"use strict";
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+// require('babel/register');
 
-var _express = require('express');
+// import express from 'express'
+// var React = require('react');
+// var ReactDOM = require('react-dom/server');
 
-var _express2 = _interopRequireDefault(_express);
+// var ReactApp = require('./components/ReactApp');
 
-require('babel/register');
+// var app = express();
 
-var React = require('react');
-var ReactDOM = require('react-dom/server');
+// app.use(express.static(__dirname + '/../dist'));
 
-var ReactApp = require('./components/ReactApp');
+// app.set('view engine', 'jade');
+// app.set('views', './app/views');
 
-var app = (0, _express2['default'])();
+// app.get('/', (req, res) => {
+//   var content = ReactDOM.renderToString(
+//     React.createElement(ReactApp, null)
+//   );
+//   res.render(
+//     'index',
+//     { reactContent: content }
+//   );
+// });
 
-app.use(_express2['default']['static'](__dirname + '/../dist'));
+// var server = app.listen(5000, function() {
+//   var host = server.address().address;
+//   var port = server.address().port;
 
-app.set('view engine', 'jade');
-app.set('views', './app/views');
-
-app.get('/', function (req, res) {
-  var content = ReactDOM.renderToString(React.createElement(ReactApp, null));
-  res.render('index', { reactContent: content });
-});
-
-var server = app.listen(5000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-
-  console.log('App listening at http://%s:%s', host, port);
-});
+//   console.log('App listening at http://%s:%s', host, port);
+// });
