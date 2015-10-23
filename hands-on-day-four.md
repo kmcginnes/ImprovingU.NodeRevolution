@@ -10,7 +10,7 @@ What we want to do is provide an extremely simple front end for Improvers to bro
 
 There's a lot of potential for extension of this idea, but let's focus on the [MLP](https://medium.com/the-happy-startup-school/beyond-mvp-10-steps-to-make-your-product-minimum-loveable-51800164ae0c#.5chi2svwh).
 
-![MLP](mlp.jpg =100x)
+<a href="https://medium.com/the-happy-startup-school/beyond-mvp-10-steps-to-make-your-product-minimum-loveable-51800164ae0c#.5chi2svwh"><img src="mlp.jpg" height="80px" /></a>
 
 ## Implementation
 
