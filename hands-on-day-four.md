@@ -34,22 +34,22 @@ We'll use an Improving GitHub repo to house our code. I'd like to break us off i
 
 ## Backlog
 
-__Class list__
-As a window shopper
-I want to see a list of classes
+__Class list__<br/>
+As a window shopper<br/>
+I want to see a list of classes<br/>
 So I can browse to find a class that interests me
 
-__Schedule__
-As a window shopper
-I want to see the schedule of classes
+__Schedule__<br/>
+As a window shopper<br/>
+I want to see the schedule of classes<br/>
 So I can figure out which classes fit in my schedule
 
-__Signup__
-As a student
-I want to sign up for a class
+__Signup__<br/>
+As a student<br/>
+I want to sign up for a class<br/>
 So I can reserve a seat
 
-__Class submission__
-As a teacher
-I want to submit a class
+__Class submission__<br/>
+As a teacher<br/>
+I want to submit a class<br/>
 So that students can signup
